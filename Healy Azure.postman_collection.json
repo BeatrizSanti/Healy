@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "5a2eb3fa-95d5-43f9-b284-8edaae2e1def",
+		"name": "Healy Azure",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "34651961"
+	},
+	"item": [
+		{
+			"name": "Paciente",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"nome\": \"Maria Silva\",\r\n  \"nascimento\": \"1990-05-10\",\r\n  \"email\": \"maria.silva@example.com\",\r\n  \"tipoPessoa\": \"Física\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "api-healy-rm551856-cahufycvaqethjhb.brazilsouth-01.azurewebsites.net/cadastro-paciente?",
+							"host": [
+								"api-healy-rm551856-cahufycvaqethjhb",
+								"brazilsouth-01",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"cadastro-paciente"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "api-healy-rm551856-cahufycvaqethjhb.brazilsouth-01.azurewebsites.net/cadastro-paciente?",
+							"host": [
+								"api-healy-rm551856-cahufycvaqethjhb",
+								"brazilsouth-01",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"cadastro-paciente"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome\": \"Lewis\",\r\n  \"email\": \"LewisHalminton@gmail.com\",\r\n  \"nascimento\": \"2006-03-18\",\r\n  \"tipo\": \"PC\",\r\n  \"cpf\": \"12345678444\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api-healy-rm551856-cahufycvaqethjhb.brazilsouth-01.azurewebsites.net/pessoa"
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "https://api-healy-rm551856-cahufycvaqethjhb.brazilsouth-01.azurewebsites.net/pessoa"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"sexo\": \"M\",\r\n  \"idade\": 44,\r\n  \"histDiabetes\": false,\r\n  \"histDoencaCoronaria\": false,\r\n  \"histDoencaVascular\": false,\r\n  \"histFumo\": false,\r\n  \"histHipertensao\": false,\r\n  \"histDislipidemia\": false,\r\n  \"histObesidade\": false,\r\n  \"remDislipidemia\": false,\r\n  \"remDiabetes\": false,\r\n  \"remHipertensao\": false,\r\n  \"remACEIeARB\": false,\r\n  \"nvlColesterol\": 10,\r\n  \"nvlCreatina\": 20,\r\n  \"exameGFRB\": 30,\r\n  \"presSistolica\": 40,\r\n  \"presDiastolica\": 50,\r\n  \"indiceMassa\": 60,\r\n  \"mesAteCrise\": 70,\r\n  \"anoAteCrise\": 8,\r\n  \"pessoa\": {\"id\":5}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api-healy-rm551856-cahufycvaqethjhb.brazilsouth-01.azurewebsites.net/profissional-saude"
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://api-healy-rm551856-cahufycvaqethjhb.brazilsouth-01.azurewebsites.net/profissional-saude"
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": "https://api-healy-rm551856-cahufycvaqethjhb.brazilsouth-01.azurewebsites.net/profissional-saude"
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "https://api-healy-rm551856-cahufycvaqethjhb.brazilsouth-01.azurewebsites.net/profissional-saude"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
