@@ -2,26 +2,9 @@
 ***Your healf AI***
 
 Aplicação em desenvolvimento desde 28/03/2024*
-### Link para o GIT
-https://github.com/MatheusFelipeCamarinhaDuarte/Healy
+
 ### LINK para o Trello
 https://trello.com/b/0GSQQFgK/gestao-das-sprints
-![image](https://github.com/MatheusFelipeCamarinhaDuarte/Healy/assets/128056372/1e481ca9-4a84-4981-9c37-108c1692a965)
-
-
-# Sumário
-
-[1 - Integrantes](#_Integrantes)
-
-[2 - Instruções de como rodar a aplicação](#_Instruicoes)
-
-[3 - Diagramas](#_Diagramas)
-
-[4 - Nossa proposta em vídeo PITCH](#_Picth)
-
-[5 - Explicações de classes](#_Explicacoes)
-
-[6 - Endpoints](#_Endpoint)
 
 
 <a id="_Integrantes"></a>
@@ -35,33 +18,25 @@ https://trello.com/b/0GSQQFgK/gestao-das-sprints
 
 <a id="_Instruicoes"></a>
 
-# 2 - Instrucoes de como rodar a aplicação
-Enrtar em:
+# 2 - Clone o repositorio de rode o projeto 
 
-src > main > java > br.com.fiap.healy
+# 3 - Rode as seguinte linhas de código 
+    git clone https://github.com/BeatrizSanti/Healy.git
+    cd <nome-da-pasta-do-projeto> 
+    Docker images 
+    dir
+    cls
+    docker build -t healy:1.0 .
+    Docker images
+    docker run -p 80:80
+    docker images 
+    docker build - t beatrizsanti/api/oracle:1.0 .
+    cls
+    docker images 
+    docker logout
+    docker login 
+    docker push beatrizsanti/api/oracle:1.0
 
-e executar o arquivo HealyApplication.Java
-
-O projeto estará fluindo a partir dai!
-agora basta retirar o arquivo do postman que foi exportado para:
-
-documentacao > requisicoes-json
-
-lá dentro encontrará o arquivo com os GET e POSTs
-sendo assim, basta rodar no postman.
-
-<a id="_Diagramas"></a>
-
-# 3 - Diagramas
-## Diagrama do projeto Java
-
-![diagrama3.jpg](documentacao%2Fdiagramas%2Fdiagrama_do_projeto.png)
-
-## Diagrama de classe
-![diagrama1.jpg](documentacao%2Fdiagramas%2Fdiagrama_classe.png)
-
-
-<a id="_Picth"></a>
 
 # 4 - Nossa proposta
 [LINK](https://www.youtube.com/watch?v=5i9sSBTHdaI)
@@ -146,64 +121,3 @@ Aqui se coloca por extenso em forma de String o número telefônico sem DDD e DD
 ### Pessoa
 Aqui se coloca a qual pessoa pertence o número telefônico.
 
-<a id="_Endpoint"></a>
-
-# 6 -  Endpoints
-### Pessoa
-    localhost/pessoa - POST;
-    localhost/pessoa - GET;
-    localhost/pessoa/{id} - GET
-    localhost/pessoa?nome= - GET;
-    localhost/pessoa?email= - GET;
-    localhost/pessoa?nascimento= - GET;
-    localhost/pessoa?sigla= - GET;    
-
-### Documento Saude
-    localhost/documento-saude - POST;
-    localhost/documento-saude - GET;
-    localhost/documento-saude/{id} - GET
-    localhost/documento-saude?estado= - GET
-    localhost/documento-saude?sigla= - GET
-    localhost/documento-saude?numero= - GET
-
-### Profissional de saúde
-    localhost/profissional-saude - POST;
-    localhost/profissional-saude - GET;
-    localhost/profissional-saude/{id} - GET
-    localhost/profissional-saude?nome= - GET;
-    localhost/profissional-saude?cpf= - GET;
-    localhost/profissional-saude?email= - GET;
-    localhost/profissional-saude?documento.sigla= - GET;
-    localhost/profissional-saude?documento.estado= - GET;
-    localhost/profissional-saude?documento.numero= - GET;
-
-### Exame
-    localhost/exame - POST;
-    localhost/exame - GET;
-    localhost/exame/{id} - GET
-    localhost/exame?sexo - GET
-    localhost/exame?idade - GET
-    localhost/exame?indiceMassa - GET
-    localhost/exame?mesAteCrise - GET
-    localhost/exame?anoAteCrise - GET
-    localhost/exame?pessoa.nome - GET
-    localhost/exame?pessoa.email - GET
-
-### Telefone
-    localhost/telefone - POST;
-    localhost/telefone - GET;
-    localhost/telefone/{id} - GET
-    localhost/telefone?ddd= - GET;
-    localhost/telefone?ddi= - GET;
-    localhost/telefone?numero= - GET;
-
-### Usuario
-    localhost/usuario - POST;
-    localhost/usuario - GET;
-    localhost/usuario/{id} - GET
-    localhost/usuario?usuario= - GET;
-    localhost/usuario?pessoa.nome= - GET;
-    localhost/usuario?pessoa.email= - GET;
-
-*NOTA¹: Tive  problemas com o git e tive que passar o projeto parte por parte novamente.
-**NOTA²: Ainda a serem implementados.
